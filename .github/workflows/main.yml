@@ -36,7 +36,7 @@ jobs:
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-boot-app:$(date-'%Y%m%d%H%M%S')
 
       - name: Login to docker hub
-        uses: docker/login/action@v1
+        uses: docker/login/action@v2
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
