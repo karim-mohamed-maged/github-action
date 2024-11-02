@@ -1,0 +1,13 @@
+name: Build & deploy spring app
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    name: build & deploy spring boot app
+    runs-on: ubuntu-latest
+    steps:
+      - name:
